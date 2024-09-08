@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Countdown Timer</title>
+  <link rel="stylesheet" href="Countdown.css">
+</head>
+<body>
+  <div class="timer-container">
+    <!-- <h1>Custom Countdown Timer</h1> -->
+    <h1> Countdown Timer</h1>
+
+    <!-- Input fields for user to select date and time -->
+    <label for="date-input">Select Date:</label>
+    <input type="date" id="date-input">
+
+    <label for="time-input">Select Time:</label>
+    <input type="time" id="time-input">
+
+    <!-- Buttons to start, pause, and resume the countdown -->
+    <div class="controls">
+      <button onclick="startCountdown()">Start Countdown</button>
+      <button onclick="pauseCountdown()">Pause</button>
+      <button onclick="resumeCountdown()">Resume</button>
+    </div>
+
+    <!-- Display countdown time -->
+    <div id="timer" class="timer"></div>
+
+    <!-- Hidden audio element for alert sound -->
+    <audio id="alarm-sound" src="alarm.mp3"></audio>
+  </div>
+
+  <script src="Countdown.js"></script>
+</body>
+</html>
